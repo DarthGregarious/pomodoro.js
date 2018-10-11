@@ -15,7 +15,7 @@ javascript:(function(){
             timerElement = document.createElement('div');
             timerElement.setAttribute('id', 'pomodoroTimer');
             timerElement.setAttribute('style', 'z-index: 99999; font-size: 24pt; position: absolute; left: 0; bottom: 0;');
-            timerElement.innerHTML = "20:00";
+            timerElement.innerHTML = "25:00";
             document.body.appendChild(timerElement);
         }
         
@@ -60,7 +60,7 @@ javascript:(function(){
       self.onRemainingTimeChanged = function(newTimerValue){
             if(newTimerValue == 1)
             {
-              $('button[title="Pause"]').click();
+              document.querySelector('button[Title="Pause"]').click();
             }
         }
     }
