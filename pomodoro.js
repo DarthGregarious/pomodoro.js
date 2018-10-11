@@ -54,6 +54,16 @@ javascript:(function(){
             }
         }
     }
+  
+    function PausesSpotifyAtEndPlugin(){
+      var self = this;
+      self.onRemainingTimeChanged = function(newTimerValue){
+            if(newTimerValue == 1)
+            {
+              $('button[title="Pause"]').click();
+            }
+        }
+    }
 
     function Timer(){
         var self = this;
