@@ -67,7 +67,7 @@ javascript:(function(){
 
     function Timer(){
         var self = this;
-        var timeToCountDown = 1200; /* 1200s = 20m */
+        var timeToCountDown = 1500; /* 1500s = 25m */
         var timerResolution = 1000; /* 1000ms = 1s */
         var plugins = [];
         var timerInterval;
